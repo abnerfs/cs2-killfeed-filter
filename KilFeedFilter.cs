@@ -1,13 +1,15 @@
 ﻿using CounterStrikeSharp.API.Core;
+using CounterStrikeSharp.API.Core.Attributes;
 using CounterStrikeSharp.API.Core.Attributes.Registration;
 using CounterStrikeSharp.API.Modules.Events;
 
 namespace KillFeedFilter
 {
+    [MinimumApiVersion(60)]
     public class KilFeedFilter : BasePlugin
     {
         public override string ModuleName => "AbNeR Killfeed Filter";
-        public override string ModuleVersion => "1.0.0";
+        public override string ModuleVersion => "1.0.1";
         public override string ModuleAuthor => "AbNeR_CSS";
         public override string ModuleDescription => "Shows only your kills/deaths/assists in the killfeed";
 
